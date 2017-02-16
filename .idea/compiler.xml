@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello_word_data" />
-        <module name="learnjava_data" />
+        <module name="DemoStoreData" />
+        <module name="DemoStoreDI" />
+        <module name="DemoStoreWeb1" />
+        <module name="DemoStoreWeb2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hello_word_data" target="1.5" />
-      <module name="hello_world" target="1.5" />
-      <module name="learnjava_data" target="1.5" />
+      <module name="DemoStoreData" target="1.5" />
+      <module name="DemoStoreDI" target="1.5" />
+      <module name="DemoStoreWeb1" target="1.5" />
+      <module name="DemoStoreWeb2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--构造器传参两种方式-->
+    <!--方式一：name-->
+    <bean id="category" class="bean.Category">
+        <constructor-arg name="cateId" value="99"/>
+        <constructor-arg name="cateName" value="其他"/>
+    </bean>
+    <!--方式二：index-->
+    <!--<bean id="category" class="bean.Category">-->
+    <!--<constructor-arg index="0" value="99"/>-->
+    <!--<constructor-arg index="1" value="其他"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="product" class="bean.Product">-->
+        <!--<property name="productId" value="100"></property>-->
+        <!--<property name="productName" value="一千零一夜"></property>-->
+        <!--<property name="productCategory" ref="category"></property>-->
+    <!--</bean>-->
+
+    <bean id="product" class="bean.Product">
+        <constructor-arg index="0" value="101"/>
+        <constructor-arg index="1" value="童话镇"/>
+        <constructor-arg index="2" ref="category"/>
+    </bean>
+</beans>

@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/DemoStoreWeb1" />
+    <file type="web" url="file://$PROJECT_DIR$/DemoStoreWeb2" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/learnjava_data/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoStoreData/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoStoreDI/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoStoreWeb1/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoStoreWeb2/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" />
 </project>

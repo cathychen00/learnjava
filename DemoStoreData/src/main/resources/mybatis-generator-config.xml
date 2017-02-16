@@ -43,7 +43,7 @@
 
         <!--jdbc的数据库连接 -->
         <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.168.100.118/autonews"-->
-                        <!--userId="root" password="root"/>-->
+        <!--userId="root" password="root"/>-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/store"
                         userId="root" password="root"/>
         <javaTypeResolver>

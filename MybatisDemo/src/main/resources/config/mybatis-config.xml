@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <typeAliases>
+        <typeAlias type="model.Category" alias="Category" />
+    </typeAliases>
     <environments default="development">
         <environment id="development">
-            <transactionManager type="JDBC"/>
+            <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
-                <property name="driver" value="${driver}"/>
-                <property name="url" value="${url}"/>
-                <property name="username" value="${username}"/>
-                <property name="password" value="${password}"/>
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <!-- ?useUnicode=true&amp;characterEncoding=utf8为了支持中文插入 -->
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/store" />
+                <property name="username" value="root" />
+                <property name="password" value="root" />
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+        <mapper resource="mapper/CategoryMapper.xml" />
     </mappers>
 </configuration>

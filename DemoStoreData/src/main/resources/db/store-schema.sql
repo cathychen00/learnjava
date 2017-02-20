@@ -1,5 +1,5 @@
 create table category (
-catid varchar(10) not null,
+cateid varchar(10) not null,
 catename varchar(80) null,
 constraint pk_category primary key (catid)
 );

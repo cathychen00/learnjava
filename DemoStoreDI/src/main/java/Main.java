@@ -3,8 +3,6 @@ import bean.Product;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.ArrayList;
-
 /**
  * Created by 陈敬 on 2017/2/7.
  */

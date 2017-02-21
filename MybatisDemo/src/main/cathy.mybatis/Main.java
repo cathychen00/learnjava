@@ -1,5 +1,5 @@
-import demo.ICategoryMapper;
-import demo.MybatisUtils;
+import mapper.CategoryMapper;
+import helper.MybatisUtils;
 import model.Category;
 import org.apache.ibatis.session.SqlSession;
 
@@ -11,7 +11,7 @@ public class Main {
         SqlSession sqlSession=MybatisUtils.getSqlSession();
         try{
 
-            ICategoryMapper categoryMapper=sqlSession.getMapper(ICategoryMapper.class);
+            CategoryMapper categoryMapper=sqlSession.getMapper(CategoryMapper.class);
             Category category=categoryMapper.GetById(1);
             if(category==null){
                 System.out.println("该分类不存在");

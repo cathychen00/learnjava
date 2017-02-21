@@ -1,4 +1,4 @@
-package demo;
+package helper;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

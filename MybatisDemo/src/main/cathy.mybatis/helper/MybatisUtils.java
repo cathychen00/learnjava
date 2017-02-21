@@ -13,9 +13,6 @@ import java.io.InputStream;
 public class MybatisUtils {
     private static final String CONFIG_PATH = "config/mybatis-config.xml";
 
-    /*
-     * 获取数据库访问链接
-     */
     public static SqlSession getSqlSession() {
         SqlSession session = null;
         try {
@@ -24,15 +21,11 @@ public class MybatisUtils {
                     .build(stream);
             session = factory.openSession();
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
         return session;
     }
 
-    /*
-     * 获取数据库访问链接
-     */
     public static void closeSession(SqlSession session) {
         session.close();
     }

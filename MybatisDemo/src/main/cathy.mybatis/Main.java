@@ -12,7 +12,7 @@ public class Main {
         try{
 
             ICategoryMapper categoryMapper=sqlSession.getMapper(ICategoryMapper.class);
-            Category category=categoryMapper.GetById(2);
+            Category category=categoryMapper.GetById(1);
             if(category==null){
                 System.out.println("该分类不存在");
             }
@@ -21,6 +21,9 @@ public class Main {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
+        }
+        finally {
+            MybatisUtils.closeSession(sqlSession);
         }
     }
 }

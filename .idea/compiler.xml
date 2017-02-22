@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DemoStoreWeb1" />
         <module name="MybatisDemo" />
+        <module name="MybatisDemo2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="DemoStoreWeb1" target="1.5" />
       <module name="DemoStoreWeb2" target="1.5" />
       <module name="MybatisDemo" target="1.5" />
+      <module name="MybatisDemo2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

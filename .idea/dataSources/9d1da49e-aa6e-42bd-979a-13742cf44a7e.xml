@@ -13,138 +13,16 @@
     <schema id="7" parent="1" name="sys"/>
     <schema id="8" parent="1" name="world"/>
     <table id="9" parent="2" name="category"/>
-    <table id="10" parent="2" name="channel"/>
-    <table id="11" parent="2" name="product"/>
-    <table id="12" parent="2" name="visitor"/>
-    <table id="13" parent="2" name="website"/>
-    <column id="14" parent="9" name="catid">
+    <column id="10" parent="9" name="Id">
       <Position>1</Position>
-      <DataType>varchar(10)|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="15" parent="9" name="catename">
+    <column id="11" parent="9" name="Name">
       <Position>2</Position>
       <DataType>varchar(80)|0</DataType>
     </column>
-    <key id="16" parent="9" name="PRIMARY">
-      <ColNames>catid</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="17" parent="10" name="Id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="18" parent="10" name="Name">
-      <Position>2</Position>
-      <DataType>varchar(1000)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="19" parent="10" name="WebsiteId">
-      <Position>3</Position>
-      <DataType>int(11)|0</DataType>
-    </column>
-    <column id="20" parent="10" name="Status">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;1&apos;</DefaultExpression>
-    </column>
-    <column id="21" parent="10" name="CreateTime">
-      <Position>5</Position>
-      <DataType>datetime|0</DataType>
-    </column>
-    <key id="22" parent="10" name="PRIMARY">
-      <ColNames>Id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="23" parent="11" name="productid">
-      <Position>1</Position>
-      <DataType>varchar(10)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="24" parent="11" name="cateid">
-      <Position>2</Position>
-      <DataType>varchar(10)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="25" parent="11" name="productName">
-      <Position>3</Position>
-      <DataType>varchar(80)|0</DataType>
-    </column>
-    <index id="26" parent="11" name="productCat">
-      <ColNames>cateid</ColNames>
-    </index>
-    <index id="27" parent="11" name="productName">
-      <ColNames>productName</ColNames>
-    </index>
-    <key id="28" parent="11" name="PRIMARY">
-      <ColNames>productid</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="29" parent="11" name="fk_product_1">
-      <ColNames>cateid</ColNames>
-      <RefSchemaName>store</RefSchemaName>
-      <RefTableName>category</RefTableName>
-      <RefColNames>catid</RefColNames>
-    </foreign-key>
-    <column id="30" parent="12" name="Id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="31" parent="12" name="Name">
-      <Position>2</Position>
-      <DataType>varchar(1000)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="32" parent="12" name="Email">
-      <Position>3</Position>
-      <DataType>varchar(1000)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="33" parent="12" name="Status">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;1&apos;</DefaultExpression>
-    </column>
-    <column id="34" parent="12" name="CreateTime">
-      <Position>5</Position>
-      <DataType>datetime|0</DataType>
-    </column>
-    <key id="35" parent="12" name="PRIMARY">
-      <ColNames>Id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="36" parent="13" name="Id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="37" parent="13" name="Name">
-      <Position>2</Position>
-      <DataType>varchar(1000)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="38" parent="13" name="VisitorId">
-      <Position>3</Position>
-      <DataType>int(11)|0</DataType>
-    </column>
-    <column id="39" parent="13" name="Status">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;1&apos;</DefaultExpression>
-    </column>
-    <column id="40" parent="13" name="CreateTime">
-      <Position>5</Position>
-      <DataType>datetime|0</DataType>
-    </column>
-    <key id="41" parent="13" name="PRIMARY">
+    <key id="12" parent="9" name="PRIMARY">
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>

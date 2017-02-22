@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CategoryController {
 
     @RequestMapping(value = "/category/edit")
-    public String Edit() {
+    public String edit() {
         return "edit";
     }
 
     @RequestMapping("/category/detail")
-    public String Detail(){
+    public String detail(){
         return "detail";
     }
 }

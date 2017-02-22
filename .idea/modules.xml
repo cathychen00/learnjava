@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/DemoStoreWeb1/DemoStoreWeb1.iml" filepath="$PROJECT_DIR$/DemoStoreWeb1/DemoStoreWeb1.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreWeb2/DemoStoreWeb2.iml" filepath="$PROJECT_DIR$/DemoStoreWeb2/DemoStoreWeb2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" filepath="$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisDemo2/MybatisDemo2.iml" filepath="$PROJECT_DIR$/MybatisDemo2/MybatisDemo2.iml" />
     </modules>
   </component>
 </project>

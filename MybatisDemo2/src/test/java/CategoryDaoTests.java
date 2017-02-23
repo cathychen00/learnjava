@@ -23,13 +23,11 @@ public class CategoryDaoTests {
     public void test_selectById(){
         Category category=categoryMapper.selectByPrimaryKey(1);
         System.out.println(category.getName());//Fish
-
     }
 
     @Test
     public void test_count(){
         CategoryExample example=new CategoryExample();
-        example.createCriteria().andNameEqualTo("Dogs");
         long result=categoryMapper.countByExample(example);
         System.out.println(result);
     }

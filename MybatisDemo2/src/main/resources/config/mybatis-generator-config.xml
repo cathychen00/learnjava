@@ -35,5 +35,8 @@
         <table tableName="category" enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true" enableUpdateByExample="true">
             <generatedKey column="Id" sqlStatement="mysql" identity="true"/>
         </table>
+        <table tableName="product" enableCountByExample="true" enableSelectByExample="true" enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true" enableDeleteByPrimaryKey="true" enableInsert="true">
+            <generatedKey column="Id" sqlStatement="mysql" identity="true"></generatedKey>
+        </table>
     </context>
 </generatorConfiguration>

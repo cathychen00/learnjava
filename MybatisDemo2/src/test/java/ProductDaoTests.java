@@ -31,9 +31,7 @@ public class ProductDaoTests {
         int pageIndex=1,pageSize=3;
         RowBounds rowBounds=new RowBounds((pageIndex-1)*pageSize,pageSize);
 
-        ProductExample example=new ProductExample();
-        example.createCriteria().andCategoryidEqualTo(2);
-        List<Product> products=productMapper.selectByExampleWithRowbounds(example,rowBounds);
+        List<Product> products=productMapper.selectByExampleWithRowbounds(new ProductExample(),rowBounds);
         if(products==null){
             System.out.println("查询结果为空");
         }else {

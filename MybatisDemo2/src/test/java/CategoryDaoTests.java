@@ -6,11 +6,9 @@ import com.data.pojo.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * Created by 陈敬 on 2017/2/22.
@@ -76,12 +74,3 @@ public class CategoryDaoTests {
 
     }
 }
-
-//商品id=2 name=Dogs
-//        Products：6
-//        |_Bulldog
-//        |_Poodle
-//        |_Dalmation
-//        |_Golden Retriever
-//        |_Labrador Retriever
-//        |_Chihuahua

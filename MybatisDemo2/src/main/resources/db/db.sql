@@ -18,7 +18,7 @@ constraint fk_product_2 foreign key (categoryId)
 references category (Id)
 );
 create index productCat on product (categoryId);
-create index productName on product (Name);
+
 
 INSERT INTO product(CategoryId,Name) VALUES (1, '裂帛');
 INSERT INTO product(CategoryId,Name) VALUES (1, '雅鹿');

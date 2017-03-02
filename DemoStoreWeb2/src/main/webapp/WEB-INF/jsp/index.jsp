@@ -78,5 +78,12 @@
     </div>
 </div>
 <br>
+
+7.JavaBean访问计数
+<jsp:useBean id="counter" class="com.cathy.domain.Counter" scope="application"></jsp:useBean>
+<div>
+    访问计数:<jsp:getProperty name="counter" property="total"></jsp:getProperty>
+</div>
+<br>
 </body>
 </html>

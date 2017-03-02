@@ -17,5 +17,7 @@
     商品名称:<input type="text" name="cateName">
     <input type="submit" value="提交">
 </form>
+<jsp:useBean id="counter" class="com.cathy.domain.Counter" scope="application"></jsp:useBean>
+<div>访问计数:<jsp:getProperty name="counter" property="total"></jsp:getProperty></div>
 </body>
 </html>

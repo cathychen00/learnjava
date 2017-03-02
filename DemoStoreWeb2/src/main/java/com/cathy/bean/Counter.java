@@ -1,4 +1,4 @@
-package com.cathy.domain;
+package com.cathy.bean;
 
 /**
  * Created by 陈敬 on 2017/3/2.

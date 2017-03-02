@@ -54,8 +54,8 @@
 <br>
 
 4.include和jsp:include
-<%@include file="copyright.jsp"%>
-<jsp:include page="copyright.jsp"></jsp:include>
+<%@include file="common/copyright.jsp"%>
+<jsp:include page="common/copyright.jsp"></jsp:include>
 <br>
 
 5.jsp:forward

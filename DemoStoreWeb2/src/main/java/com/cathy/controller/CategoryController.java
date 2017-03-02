@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class CategoryController {
-
+    @RequestMapping(value="/category/index")
+    public String index(){
+        return "index";
+    }
     @RequestMapping(value = "/category/edit")
     public String edit() {
         return "edit";

@@ -27,7 +27,7 @@ public class CategoryDaoTests {
 
     @Test
     public void test_count(){
-        CategoryExample example=new CategoryExample();
+                                                                                                                            CategoryExample example=new CategoryExample();
         long result=categoryMapper.countByExample(example);
         System.out.println(result);
     }

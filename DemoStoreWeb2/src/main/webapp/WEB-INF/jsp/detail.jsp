@@ -11,6 +11,17 @@
     <title>Title</title>
 </head>
 <body>
-<%=request.getParameter("id")%>
+<div>
+    <%request.setCharacterEncoding("UTF-8");%>
+    <jsp:useBean id="category" class="com.cathy.domain.Category">
+        <jsp:setProperty name="category" property="*"></jsp:setProperty>
+    </jsp:useBean>
+    <table>
+        <tr>
+            <td>id:</td><td><jsp:getProperty name="category" property="cateId"></jsp:getProperty></td>
+        </tr>
+        <tr><td>名称：</td><td><jsp:getProperty name="category" property="cateName"></jsp:getProperty></td></tr>
+    </table>
+</div>
 </body>
 </html>

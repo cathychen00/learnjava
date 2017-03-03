@@ -12,6 +12,8 @@
     <title>商品分类列表</title>
 </head>
 <body>
+<jsp:include page="common/top.jsp"></jsp:include>
+
 <a href="/category/edit">新建</a>
 <a href="detail?id=1">详情</a>
 <a href="edit?id=1">修改</a>

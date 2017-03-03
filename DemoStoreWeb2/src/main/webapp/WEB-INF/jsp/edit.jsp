@@ -12,6 +12,7 @@
     <title>Title</title>
 </head>
 <body>
+<jsp:include page="common/top.jsp"></jsp:include>
 <form action="/category/detail" method="post">
     商品id:<input type="number" name="cateId">
     商品名称:<input type="text" name="cateName">

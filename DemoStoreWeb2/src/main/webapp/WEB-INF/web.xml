@@ -11,6 +11,20 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
+    <!--filter-->
+    <filter>
+        <filter-name>counterFilter</filter-name>
+        <filter-class>filter.counterFilter</filter-class>
+        <init-param>
+            <param-name>count</param-name>
+            <param-value>100</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>counterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>springmvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

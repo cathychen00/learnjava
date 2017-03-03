@@ -12,6 +12,7 @@
 </head>
 <body>
 <div>
+    <jsp:include page="common/top.jsp"></jsp:include>
     <%request.setCharacterEncoding("UTF-8");%>
     <jsp:useBean id="category" class="com.cathy.domain.Category">
         <jsp:setProperty name="category" property="*"></jsp:setProperty>

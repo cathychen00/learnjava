@@ -14,26 +14,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!--&lt;!&ndash; JSTL标签类 &ndash;&gt;-->
     <!--<dependency>-->
-      <!--<groupId>org.springframework</groupId>-->
-      <!--<artifactId>spring-core</artifactId>-->
-      <!--<version>4.3.5.RELEASE</version>-->
+      <!--<groupId>jstl</groupId>-->
+      <!--<artifactId>jstl</artifactId>-->
+      <!--<version>1.2</version>-->
     <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.springframework</groupId>-->
-      <!--<artifactId>spring-beans</artifactId>-->
-      <!--<version>4.3.5.RELEASE</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.springframework</groupId>-->
-      <!--<artifactId>spring-context</artifactId>-->
-      <!--<version>4.3.5.RELEASE</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.springframework</groupId>-->
-      <!--<artifactId>spring-web</artifactId>-->
-      <!--<version>4.3.5.RELEASE</version>-->
-    <!--</dependency>-->
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>

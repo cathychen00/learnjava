@@ -1,5 +1,6 @@
 <%@ page import="java.util.Date" %>
-<%@ page import="java.text.SimpleDateFormat" %><%--
+<%@ page import="java.text.SimpleDateFormat" %>
+<%--
   Created by IntelliJ IDEA.
   User: 陈敬
   Date: 2017/3/1
@@ -79,7 +80,6 @@
         name:<jsp:getProperty name="category" property="cateName"></jsp:getProperty>
     </div>
 </div>
-<br>
 
 7.JavaBean访问计数
 <jsp:useBean id="counter" class="com.cathy.bean.Counter" scope="application"></jsp:useBean>
@@ -87,5 +87,13 @@
     访问计数:<jsp:getProperty name="counter" property="total"></jsp:getProperty>
 </div>
 <br>
+
+
+8.EL
+<div>
+    servername:${pageContext.request.serverName}<br>
+    serverport:${pageContext.request.serverPort}
+</div>
+
 </body>
 </html>

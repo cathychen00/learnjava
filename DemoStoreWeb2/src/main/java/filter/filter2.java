@@ -21,5 +21,4 @@ public class filter2 implements Filter {
     public void init(FilterConfig config) throws ServletException {
         context=config.getServletContext();
     }
-
 }

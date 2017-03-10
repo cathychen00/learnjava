@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DemoAOP" />
+        <module name="DemoQuartZ" />
         <module name="DemoStoreWeb1" />
         <module name="MybatisDemo" />
         <module name="MybatisDemo2" />
@@ -14,6 +15,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DemoAOP" target="1.5" />
+      <module name="DemoQuartZ" target="1.5" />
       <module name="DemoStoreData" target="1.5" />
       <module name="DemoStoreDI" target="1.5" />
       <module name="DemoStoreWeb1" target="1.5" />

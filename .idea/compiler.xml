@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DemoAOP" />
-        <module name="DemoQuartZ" />
         <module name="DemoStoreWeb1" />
         <module name="MybatisDemo" />
         <module name="MybatisDemo2" />

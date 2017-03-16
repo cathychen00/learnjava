@@ -6,9 +6,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <!-- 这里支持多种寻址方式：classpath和file -->
+                <value>classpath:properties/config.properties</value>
+            </list>
+        </property>
+    </bean>
+
     <!--构造器传参两种方式-->
     <!--方式一：name-->
-    <bean id="category" class="bean.Category" c:cateId="99" c:cateName="其他">
+    <bean id="category" class="bean.Category" c:cateId="${categoryid}" c:cateName="${configName}">
         <!--<constructor-arg name="cateId" value="99"/>-->
         <!--<constructor-arg name="cateName" value="其他"/>-->
     </bean>

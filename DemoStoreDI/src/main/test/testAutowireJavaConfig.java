@@ -1,6 +1,5 @@
 import autowire.bean.Category1;
 import autowire.bean.Product1;
-import bean.Category;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,23 +10,21 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by 陈敬 on 2017/3/15.
  */
-@ContextConfiguration(locations = "classpath:spring-config.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
-public class testAutowireXml {
-    @Autowired
-    Product1 p;
-
-    @Test
-    public void testProduct(){
-        Assert.assertNotNull(p);
-        System.out.println(p.toString());
-    }
-
+@ContextConfiguration(classes = autowire.config.ProductConfig.class)
+public class testAutowireJavaConfig {
     @Autowired
     Category1 category;
-
     @Test
     public void testCategory(){
         Assert.assertNotNull(category);
+    }
+
+    @Autowired
+    Product1 product;
+    @Test
+    public void testProduct(){
+        Assert.assertNotNull(product);
+        System.out.println(product.toString());
     }
 }

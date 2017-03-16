@@ -2,15 +2,15 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--构造器传参两种方式-->
     <!--方式一：name-->
-    <bean id="category" class="bean.Category">
-        <constructor-arg name="cateId" value="99"/>
-        <constructor-arg name="cateName" value="其他"/>
+    <bean id="category" class="bean.Category" c:cateId="99" c:cateName="其他">
+        <!--<constructor-arg name="cateId" value="99"/>-->
+        <!--<constructor-arg name="cateName" value="其他"/>-->
     </bean>
     <!--方式二：index-->
     <!--<bean id="category" class="bean.Category">-->
@@ -24,10 +24,10 @@
         <!--<property name="productCategory" ref="category"></property>-->
     <!--</bean>-->
 
-    <bean id="product" class="bean.Product">
+    <bean id="product" class="bean.Product" c:category-ref="category">
         <constructor-arg index="0" value="101"/>
         <constructor-arg index="1" value="童话镇"/>
-        <constructor-arg index="2" ref="category"/>
+        <!--<constructor-arg index="2" ref="category"/>-->
     </bean>
 
     <context:component-scan base-package="autowire.bean"></context:component-scan>

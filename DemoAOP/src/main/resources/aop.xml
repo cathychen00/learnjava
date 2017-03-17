@@ -15,6 +15,7 @@
         <aop:aspect id="log" ref="logHandler">
             <aop:pointcut id="addLog" expression="execution(* service.*.*(..))"></aop:pointcut>
             <aop:before method="log" pointcut-ref="addLog"></aop:before>
+            <aop:after method="log" pointcut-ref="addLog"></aop:after>
         </aop:aspect>
     </aop:config>
 </beans>

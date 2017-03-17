@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="categoryService" class="service.CategoryService1"></bean>
+    <bean id="logHanlder" class="pointcut.LogTimeHandler"></bean>
+    <aop:config>
+        <aop:aspect id="log" ref="logHanlder">
+            <aop:pointcut id="addlog" expression="execution(* service.*.*(..))"></aop:pointcut>
+            <aop:around method="log" pointcut-ref="addlog"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>

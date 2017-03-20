@@ -14,12 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!--&lt;!&ndash; JSTL标签类 &ndash;&gt;-->
-    <!--<dependency>-->
-      <!--<groupId>jstl</groupId>-->
-      <!--<artifactId>jstl</artifactId>-->
-      <!--<version>1.2</version>-->
-    <!--</dependency>-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>3.2.0.RELEASE</version>
+    </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>

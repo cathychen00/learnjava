@@ -12,9 +12,4 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 @ComponentScan(basePackageClasses = {service.CategoryService3.class,pointcut.LogHelper3.class})
 public class BeanConfig {
-
-//    @Bean
-//    public CategoryService3 service(){
-//        return new CategoryService3();
-//    }
 }

@@ -14,6 +14,8 @@
 <div>
     <jsp:include page="common/top.jsp"></jsp:include>
     <%request.setCharacterEncoding("UTF-8");%>
+
+    测试jsp:useBean
     <jsp:useBean id="category" class="com.cathy.domain.Category">
         <jsp:setProperty name="category" property="*"></jsp:setProperty>
     </jsp:useBean>
@@ -23,6 +25,13 @@
         </tr>
         <tr><td>名称：</td><td><jsp:getProperty name="category" property="cateName"></jsp:getProperty></td></tr>
     </table>
+</div>
+<div>
+    测试query参数
+    <ul>
+        <li>id:${cate.cateId}</li>
+        <li>name:${cate.cateName}</li>
+    </ul>
 </div>
 </body>
 </html>

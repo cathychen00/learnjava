@@ -17,7 +17,7 @@
 
 <a href="/category/edit">新建</a>
 <a href="detail?id=1">详情</a>
-<a href="edit?id=1">修改</a>
+<a href="edit/1">修改</a>
 <br>
 1.测试声明标识
 <%!

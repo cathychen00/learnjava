@@ -25,8 +25,8 @@
 </div>
 <div>
     <form method="post" action="/category/save">
-        <div>id:<input type="text" value="${cate.cateId}"></div>
-        <div>name:<input type="text" value="${cate.cateName}"></div>
+        <div>id:<input type="text" value="${cate.cateId}" name="cateId"></div>
+        <div>name:<input type="text" value="${cate.cateName}" name="cateName"></div>
         <div><input type="submit" value="提交"></div>
     </form>
 </div>

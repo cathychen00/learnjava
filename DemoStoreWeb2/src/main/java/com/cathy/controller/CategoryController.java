@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
@@ -20,8 +21,9 @@ public class CategoryController {
         return "index";
     }
 
-    @RequestMapping(value = "/edit/{id}")
+    @RequestMapping(value = "/edit/{id}",method = RequestMethod.GET)
     public String edit(@PathVariable("id") int id,Model model) {
+        //todo:get category from db
         Category category=new Category();
         category.setCateId(id);
         category.setCateName("测试分类"+id);
@@ -40,8 +42,9 @@ public class CategoryController {
         return "detail";
     }
 
-    @RequestMapping("/save")
-    public String save(){
-        return "index";
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
+    public String save(Category category){
+        //todo:save category to db
+        return "redirect:/category/detail?id="+category.getCateId();
     }
 }

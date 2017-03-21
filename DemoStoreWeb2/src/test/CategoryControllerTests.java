@@ -15,9 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Created by 陈敬 on 2017/3/20.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"file:src/main/webapp/WEB-INF/applicationContext.xml","file:src/main/webapp/WEB-INF/springmvc-servlet.xml"})
-@WebAppConfiguration()
+
 public class CategoryControllerTests {
 
     @Test

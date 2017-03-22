@@ -15,7 +15,6 @@
 <body>
 <jsp:include page="common/top.jsp"></jsp:include>
 
-<a href="/category/edit">新建</a>
 <a href="detail?id=1">详情</a>
 <a href="edit/1">修改</a>
 <br>

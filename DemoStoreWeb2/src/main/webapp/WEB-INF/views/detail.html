@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+<div>
+    <ul>
+        <li>id:<span th:text="${cate.cateId}"></span></li>
+        <li>name:<span th:text="${cate.cateName}"></span></li>
+    </ul>
+</div>
 </body>
 </html>

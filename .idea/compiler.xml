@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DemoAOP" />
         <module name="DemoStoreWeb1" />
+        <module name="DemoStoreWeb2" />
         <module name="MybatisDemo" />
         <module name="MybatisDemo2" />
       </profile>

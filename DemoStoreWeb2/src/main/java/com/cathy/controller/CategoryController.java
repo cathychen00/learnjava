@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.*;
+
 
 /**
  * Created by 陈敬 on 2017/2/15.
@@ -17,7 +19,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CategoryController {
 
     @RequestMapping(value="/index")
-    public String index(){
+    public String index(Model model){
+        model.addAttribute("name","world");
         return "index";
     }
 

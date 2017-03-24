@@ -7,7 +7,7 @@
 <body>
 <div>
     <a th:href="@{/category/index}">首页</a>
-    <form method="post" th:object="${cate}" th:action="@{/category/save}">
+    <form method="post" th:object="${cate}" th:action="@{/category/save}" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>id:</td>
@@ -16,6 +16,12 @@
             <tr>
                 <td>name:</td>
                 <td><input type="text" th:field="*{cateName}"></td>
+            </tr>
+            <tr>
+                <td>file:</td>
+                <td>
+                    <input type="file" accept="image/jpeg,image/png,image/jpg" name="picture">
+                </td>
             </tr>
             <tr>
                 <td colspan="2">

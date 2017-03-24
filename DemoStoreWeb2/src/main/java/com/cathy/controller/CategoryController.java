@@ -1,15 +1,17 @@
 package com.cathy.controller;
 
 import com.cathy.domain.Category;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.io.File;
+import java.io.IOException;
 
 
 /**
@@ -18,6 +20,8 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/category")
 public class CategoryController {
+    @Autowired
+    HttpServletRequest request;
 
     @RequestMapping(value="/index")
     public String index(Model model){
@@ -47,7 +51,12 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "/save",method = RequestMethod.POST)
-    public String save(@Valid Category category,Errors errors){
+    public String save(@RequestPart("picture") MultipartFile picture, @Valid Category category, Errors errors) throws IOException {
+
+        //todo:save file to image server
+        String filepath=request.getRealPath("/")+"upload/"+picture.getOriginalFilename();
+        picture.transferTo(new File(filepath));
+
         if(errors.hasErrors()){
             return "edit.html";
         }

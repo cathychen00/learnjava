@@ -3,12 +3,13 @@ package com.cathy.controller;
 import com.cathy.domain.Category;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.*;
+import javax.validation.Valid;
 
 
 /**
@@ -21,7 +22,7 @@ public class CategoryController {
     @RequestMapping(value="/index")
     public String index(Model model){
         model.addAttribute("name","world");
-        return "index";
+        return "index.html";
     }
 
     @RequestMapping(value = "/edit/{id}",method = RequestMethod.GET)
@@ -32,7 +33,7 @@ public class CategoryController {
         category.setCateName("测试分类"+id);
         model.addAttribute("cate",category);
 
-        return "edit";
+        return "edit.html";
     }
 
     @RequestMapping("/detail")
@@ -42,11 +43,14 @@ public class CategoryController {
         category.setCateName("测试分类"+id);
         model.addAttribute("cate",category);
 
-        return "detail";
+        return "detail.html";
     }
 
     @RequestMapping(value = "/save",method = RequestMethod.POST)
-    public String save(Category category){
+    public String save(@Valid Category category,Errors errors){
+        if(errors.hasErrors()){
+            return "edit.html";
+        }
         //todo:save category to db
         return "redirect:/category/detail?id="+category.getCateId();
     }

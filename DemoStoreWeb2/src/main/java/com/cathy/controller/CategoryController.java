@@ -1,6 +1,7 @@
 package com.cathy.controller;
 
 import com.cathy.domain.Category;
+import com.cathy.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -62,5 +63,15 @@ public class CategoryController {
         }
         //todo:save category to db
         return "redirect:/category/detail?id="+category.getCateId();
+    }
+
+    @RequestMapping("/error404")
+    public String error(){
+        throw new NotFoundException();
+    }
+
+    @RequestMapping("/error")
+    public String errorNotFound() throws Exception {
+        throw new Exception();
     }
 }

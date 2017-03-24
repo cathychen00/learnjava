@@ -16,7 +16,7 @@
     <mvc:annotation-driven />
 
     <!--controller包-->
-    <context:component-scan base-package="com.cathy.controller"></context:component-scan>
+    <context:component-scan base-package="com.cathy.*"></context:component-scan>
 
     <!-- Thymeleaf View Resolver - implementation of Spring's ViewResolver interface -->
     <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">

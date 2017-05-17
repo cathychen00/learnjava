@@ -2,7 +2,8 @@ package com.cathy.domain;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-public class Category {
+public class Category implements java.io.Serializable{
+    public Category(){}
 
     @NotNull
     @Min(1)

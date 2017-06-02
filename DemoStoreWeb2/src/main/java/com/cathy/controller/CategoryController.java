@@ -24,12 +24,17 @@ public class CategoryController {
     @Autowired
     HttpServletRequest request;
 
-//
-@RequestMapping(value="/index")
-public String index(Model model){
-    model.addAttribute("name","world");
-    return "index.html";
-}
+////
+//@RequestMapping(value="/index")
+//public String index(Model model){
+//    model.addAttribute("name","world");
+//    return "index.html";
+//}
+
+    @RequestMapping(value="/index")
+    public String index(){
+        return "index.html";
+    }
 
 
     @RequestMapping(value = "/edit/{id}",method = RequestMethod.GET)

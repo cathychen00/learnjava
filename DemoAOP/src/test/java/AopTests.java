@@ -11,16 +11,14 @@ import service.CategoryService2;
 public class AopTests {
 
     @Test
-    public void test(){
-        ApplicationContext context=new ClassPathXmlApplicationContext("aop.xml");
+    public void test() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("aop.xml");
 
-        CategoryService1 service1=context.getBean(CategoryService1.class);
+        CategoryService1 service1 = context.getBean(CategoryService1.class);
         service1.add(1);
 
-        CategoryService2 service2=context.getBean(CategoryService2.class);
+        CategoryService2 service2 = context.getBean(CategoryService2.class);
         service2.add(2);
 
-//        LogHandler logHandler=context.getBean(LogHandler.class);
-//        logHandler.log();
     }
 }

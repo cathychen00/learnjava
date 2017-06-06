@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoAOP/DemoAOP.iml" filepath="$PROJECT_DIR$/DemoAOP/DemoAOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoBean/DemoBean.iml" filepath="$PROJECT_DIR$/DemoBean/DemoBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" filepath="$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DemoStore.iml" filepath="$PROJECT_DIR$/.idea/DemoStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" filepath="$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" filepath="$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" />

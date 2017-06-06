@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DemoAOP" />
         <module name="DemoBean" />
+        <module name="DemoJdbcTemplate" />
         <module name="DemoStoreWeb1" />
         <module name="DemoStoreWeb2" />
         <module name="MybatisDemo" />
@@ -17,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="DemoAOP" target="1.5" />
       <module name="DemoBean" target="1.5" />
+      <module name="DemoJdbcTemplate" target="1.8" />
       <module name="DemoQuartZ" target="1.5" />
       <module name="DemoStoreData" target="1.5" />
       <module name="DemoStoreDI" target="1.5" />

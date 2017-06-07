@@ -1,21 +1,19 @@
 create table Category (
-Id int not null auto_increment,
+Id int not null,
 Name varchar(80) null,
 constraint pk_category primary key (Id)
 );
 
-INSERT INTO category(Name) VALUES ('女装');
-INSERT INTO category(Name) VALUES ('美妆');
-INSERT INTO category(Name) VALUES ('书籍');
+INSERT INTO category(id,Name) VALUES (1,'女装');
+INSERT INTO category(id,Name) VALUES (2,'美妆');
+INSERT INTO category(id,Name) VALUES (3,'书籍');
 
 ---------------------------------------------
 create table product (
 Id int not null auto_increment,
 categoryId int not null,
 Name varchar(80) null,
-constraint pk_product primary key (Id),
-constraint fk_product_2 foreign key (categoryId)
-references category (Id)
+constraint pk_product primary key (Id)
 );
 create index productCat on product (categoryId);
 

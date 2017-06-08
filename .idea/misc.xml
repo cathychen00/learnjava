@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/DemoJdbcTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/DemoHibernate/pom.xml" />
         <option value="$PROJECT_DIR$/DemoJPA/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoRedis/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,10 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.sound.midi.Soundbank;
-import javax.swing.text.StyledEditorKit;
-import java.util.List;
-
 /**
  * Created by 陈敬 on 2017/6/7.
  */
@@ -17,20 +13,28 @@ import java.util.List;
 @RunWith(SpringJUnit4ClassRunner.class)
 public class testJpa {
 
+    int id=5;
+
     @Autowired
     private CategoryDao categoryDao;
 
     @Test
     public void testSave(){
         Category category=new Category();
-        category.setId(5);
-        category.setName("test1");
+        category.setId(id);
+        category.setName("test");
         categoryDao.save(category);
     }
 
     @Test
+    public void testUpdateName(){
+        String name="test111";
+        categoryDao.updateName(id,name);
+    }
+
+    @Test
     public void testFindById(){
-        Category category=categoryDao.findOne(5);
+        Category category=categoryDao.findOne(id);
         System.out.println(category);
     }
 
@@ -50,7 +54,6 @@ public class testJpa {
 
     @Test
     public void delete(){
-        int id=5;
         categoryDao.delete(id);
     }
 

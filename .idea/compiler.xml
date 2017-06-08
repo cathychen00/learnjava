@@ -10,6 +10,7 @@
         <module name="DemoBean" />
         <module name="DemoHibernate" />
         <module name="DemoJdbcTemplate" />
+        <module name="DemoJPA" />
         <module name="DemoStoreWeb1" />
         <module name="DemoStoreWeb2" />
         <module name="MybatisDemo" />
@@ -21,6 +22,7 @@
       <module name="DemoBean" target="1.5" />
       <module name="DemoHibernate" target="1.5" />
       <module name="DemoJdbcTemplate" target="1.8" />
+      <module name="DemoJPA" target="1.5" />
       <module name="DemoQuartZ" target="1.5" />
       <module name="DemoStoreData" target="1.5" />
       <module name="DemoStoreDI" target="1.5" />

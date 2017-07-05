@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * Created by 陈敬 on 2017/6/8.
  */
-@ContextConfiguration(locations = "classpath:spring/applicationContext*.xml")
+@ContextConfiguration(locations = "classpath:spring/applicationContext-jedis.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class testRedis {
     @Resource

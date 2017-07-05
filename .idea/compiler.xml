@@ -30,6 +30,7 @@
       <module name="DemoStoreDI" target="1.5" />
       <module name="DemoStoreWeb1" target="1.5" />
       <module name="DemoStoreWeb2" target="1.5" />
+      <module name="DemoThymeleaf" target="1.5" />
       <module name="MybatisDemo" target="1.5" />
       <module name="MybatisDemo2" target="1.5" />
       <module name="Web3" target="1.5" />

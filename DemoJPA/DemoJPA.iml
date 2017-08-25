@@ -10,7 +10,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="SimplePU" value="9d1da49e-aa6e-42bd-979a-13742cf44a7e" />
-          <factory-entry name="category" />
+          <factory-entry name="category" value="8497756a-a0fe-4b79-87a5-20c2eeab4bee" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>

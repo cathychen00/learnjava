@@ -4,9 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoAOP/DemoAOP.iml" filepath="$PROJECT_DIR$/DemoAOP/DemoAOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoBean/DemoBean.iml" filepath="$PROJECT_DIR$/DemoBean/DemoBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoConsole/DemoConsole.iml" filepath="$PROJECT_DIR$/DemoConsole/DemoConsole.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoHibernate/DemoHibernate.iml" filepath="$PROJECT_DIR$/DemoHibernate/DemoHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoJPA/DemoJPA.iml" filepath="$PROJECT_DIR$/DemoJPA/DemoJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" filepath="$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" filepath="$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoRedis/DemoRedis.iml" filepath="$PROJECT_DIR$/DemoRedis/DemoRedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DemoStore.iml" filepath="$PROJECT_DIR$/.idea/DemoStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" filepath="$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" />

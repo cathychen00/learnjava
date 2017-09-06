@@ -14,6 +14,7 @@
         <module name="DemoJPA" />
         <module name="DemoMockTest" />
         <module name="DemoRedis" />
+        <module name="DemoShiro" />
         <module name="DemoStoreWeb1" />
         <module name="DemoStoreWeb2" />
         <module name="MybatisDemo" />
@@ -30,6 +31,7 @@
       <module name="DemoMockTest" target="1.5" />
       <module name="DemoQuartZ" target="1.5" />
       <module name="DemoRedis" target="1.5" />
+      <module name="DemoShiro" target="1.5" />
       <module name="DemoStoreData" target="1.5" />
       <module name="DemoStoreDI" target="1.5" />
       <module name="DemoStoreWeb1" target="1.5" />

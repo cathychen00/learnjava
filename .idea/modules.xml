@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" filepath="$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" filepath="$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoRedis/DemoRedis.iml" filepath="$PROJECT_DIR$/DemoRedis/DemoRedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoShiro/DemoShiro.iml" filepath="$PROJECT_DIR$/DemoShiro/DemoShiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DemoStore.iml" filepath="$PROJECT_DIR$/.idea/DemoStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" filepath="$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" filepath="$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" />

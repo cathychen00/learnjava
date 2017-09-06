@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/DemoRedis/pom.xml" />
         <option value="$PROJECT_DIR$/DemoMockTest/pom.xml" />
         <option value="$PROJECT_DIR$/DemoConsole/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoShiro/pom.xml" />
       </list>
     </option>
   </component>

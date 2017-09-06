@@ -53,4 +53,25 @@ public class ShiroTests {
 
         subject.logout();
     }
+
+    @Test
+    public void demoJdbcRealm(){
+        //init配置文件初始化SecurityManager工厂
+        Factory<SecurityManager> factory=new IniSecurityManagerFactory("classpath:shiro-jdbc-realm.ini");
+        SecurityManager securityManager=factory.getInstance();
+        SecurityUtils.setSecurityManager(securityManager);
+
+        Subject subject=SecurityUtils.getSubject();
+        UsernamePasswordToken token=new UsernamePasswordToken("admin","123");
+
+        try{
+            subject.login(token);
+        }catch (AuthenticationException ex){
+
+        }
+
+        org.junit.Assert.assertEquals(true,subject.isAuthenticated());
+
+        subject.logout();
+    }
 }

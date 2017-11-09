@@ -14,9 +14,13 @@
         <module name="DemoJPA" />
         <module name="DemoMockTest" />
         <module name="DemoRedis" />
+        <module name="DemoRestful" />
         <module name="DemoShiro" />
+        <module name="DemoShiroSpring" />
+        <module name="DemoShiroWeb" />
         <module name="DemoStoreWeb1" />
         <module name="DemoStoreWeb2" />
+        <module name="DemoSwagger" />
         <module name="MybatisDemo" />
         <module name="MybatisDemo2" />
       </profile>
@@ -31,11 +35,15 @@
       <module name="DemoMockTest" target="1.5" />
       <module name="DemoQuartZ" target="1.5" />
       <module name="DemoRedis" target="1.5" />
+      <module name="DemoRestful" target="1.5" />
       <module name="DemoShiro" target="1.5" />
+      <module name="DemoShiroSpring" target="1.5" />
+      <module name="DemoShiroWeb" target="1.5" />
       <module name="DemoStoreData" target="1.5" />
       <module name="DemoStoreDI" target="1.5" />
       <module name="DemoStoreWeb1" target="1.5" />
       <module name="DemoStoreWeb2" target="1.5" />
+      <module name="DemoSwagger" target="1.8" />
       <module name="DemoThymeleaf" target="1.5" />
       <module name="MybatisDemo" target="1.5" />
       <module name="MybatisDemo2" target="1.5" />

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/DemoRestful" />
+    <file type="web" url="file://$PROJECT_DIR$/DemoShiroSpring" />
     <file type="web" url="file://$PROJECT_DIR$/DemoStoreWeb1" />
     <file type="web" url="file://$PROJECT_DIR$/DemoStoreWeb2" />
     <file type="web" url="file://$PROJECT_DIR$/DemoThymeleaf" />
@@ -22,6 +24,10 @@
         <option value="$PROJECT_DIR$/DemoMockTest/pom.xml" />
         <option value="$PROJECT_DIR$/DemoConsole/pom.xml" />
         <option value="$PROJECT_DIR$/DemoShiro/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoShiroWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoShiroSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoSwagger/pom.xml" />
+        <option value="$PROJECT_DIR$/DemoRestful/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,16 +10,13 @@
       <module fileurl="file://$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" filepath="$PROJECT_DIR$/DemoJdbcTemplate/DemoJdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" filepath="$PROJECT_DIR$/DemoMockTest/DemoMockTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoRedis/DemoRedis.iml" filepath="$PROJECT_DIR$/DemoRedis/DemoRedis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DemoRestful/DemoRestful.iml" filepath="$PROJECT_DIR$/DemoRestful/DemoRestful.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoShiro/DemoShiro.iml" filepath="$PROJECT_DIR$/DemoShiro/DemoShiro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DemoShiroSpring/DemoShiroSpring.iml" filepath="$PROJECT_DIR$/DemoShiroSpring/DemoShiroSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoShiroWeb/DemoShiroWeb.iml" filepath="$PROJECT_DIR$/DemoShiroWeb/DemoShiroWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DemoStore.iml" filepath="$PROJECT_DIR$/.idea/DemoStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" filepath="$PROJECT_DIR$/DemoStoreDI/DemoStoreDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" filepath="$PROJECT_DIR$/DemoStoreData/DemoStoreData.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreWeb1/DemoStoreWeb1.iml" filepath="$PROJECT_DIR$/DemoStoreWeb1/DemoStoreWeb1.iml" />
       <module fileurl="file://$PROJECT_DIR$/DemoStoreWeb2/DemoStoreWeb2.iml" filepath="$PROJECT_DIR$/DemoStoreWeb2/DemoStoreWeb2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DemoSwagger/DemoSwagger.iml" filepath="$PROJECT_DIR$/DemoSwagger/DemoSwagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" filepath="$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MybatisDemo2/MybatisDemo2.iml" filepath="$PROJECT_DIR$/MybatisDemo2/MybatisDemo2.iml" />
     </modules>

@@ -14,13 +14,10 @@
         <module name="DemoJPA" />
         <module name="DemoMockTest" />
         <module name="DemoRedis" />
-        <module name="DemoRestful" />
         <module name="DemoShiro" />
-        <module name="DemoShiroSpring" />
         <module name="DemoShiroWeb" />
         <module name="DemoStoreWeb1" />
         <module name="DemoStoreWeb2" />
-        <module name="DemoSwagger" />
         <module name="MybatisDemo" />
         <module name="MybatisDemo2" />
       </profile>

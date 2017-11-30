@@ -25,9 +25,6 @@
         <option value="$PROJECT_DIR$/DemoConsole/pom.xml" />
         <option value="$PROJECT_DIR$/DemoShiro/pom.xml" />
         <option value="$PROJECT_DIR$/DemoShiroWeb/pom.xml" />
-        <option value="$PROJECT_DIR$/DemoShiroSpring/pom.xml" />
-        <option value="$PROJECT_DIR$/DemoSwagger/pom.xml" />
-        <option value="$PROJECT_DIR$/DemoRestful/pom.xml" />
       </list>
     </option>
   </component>

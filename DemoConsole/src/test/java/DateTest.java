@@ -26,4 +26,30 @@ public class DateTest {
         System.out.println(date1000.getMonth());
         System.out.println(date1000.getDayOfMonth());
     }
+
+    @Test
+    public void printMonthCalenda(){
+        LocalDate date=LocalDate.now();
+        int month=date.getMonthValue();
+        int today=date.getDayOfMonth();
+
+        System.out.println("一   二   三   四   五   六   日");
+        LocalDate currentDate=date.minusDays(today-1);
+        for(int i=1;i<currentDate.getDayOfWeek().getValue();i++){
+            System.out.print("   ");
+        }
+
+        while (currentDate.getMonthValue()==month){
+            System.out.printf("%3d",currentDate.getDayOfMonth());
+            if(currentDate.getDayOfMonth()==today){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+            currentDate=currentDate.plusDays(1);
+            if(currentDate.getDayOfWeek().getValue()==1){
+                System.out.println();
+            }
+        }
+    }
 }
